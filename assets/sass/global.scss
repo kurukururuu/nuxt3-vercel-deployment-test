@@ -1,0 +1,59 @@
+.show-enter-active,
+.show-leave-active {
+  transition: opacity 0.5s;
+}
+.show-enter,
+.show-leave-to {
+  opacity: 0;
+}
+
+.slide-sidebar-enter-active,
+.slide-sidebar-leave-active {
+  @apply transition ease-in-out duration-300 transform;
+  // transition-duration: 10s;
+}
+.slide-sidebar-enter,
+.slide-sidebar-leave-to {
+  @apply -translate-x-full;
+}
+
+[multiple], [type=date], [type=datetime-local], [type=email],
+[type=month], [type=number], [type=password], [type=search],
+[type=tel], [type=text],[type=time], [type=url], [type=week],
+[type=select], [type=file],
+select, textarea {
+  @apply p-2;
+}
+
+[type=select] {
+  button {
+    min-height: 38px;
+  }
+}
+
+.dt__pagination_wrapper--top {
+  @apply mb-3;
+
+  .dt__filter {
+    @apply mb-0;
+  }
+
+  @media (max-width: 767px) {
+    @apply flex justify-between;
+  }
+}
+
+/* "page" is hardcoded in nuxt3 page transitions atm */
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}

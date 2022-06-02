@@ -6,7 +6,23 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
+  "dependencies": {
+    "@headlessui/vue": "^0.0.0-insiders.9885008",
+    "@heroicons/vue": "^1.0.6",
+    "@jobinsjp/vue3-datatable": "^1.0.15",
+    "@nuxtjs-alt/auth": "latest",
+    "@nuxtjs-alt/axios": "latest",
+    "@nuxtjs-alt/pinia": "latest",
+    "@pinia/nuxt": "^0.1.9",
+    "pinia": "^2.0.14",
+    "vuedraggable": "^4.1.0"
+  },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "@faker-js/faker": "^6.3.1",
+    "@nuxtjs/tailwindcss": "^5.0.4",
+    "@tailwindcss/forms": "^0.5.1",
+    "nuxt": "3.0.0-rc.3",
+    "sass": "^1.51.0",
+    "sass-loader": "10"
   }
 }
